@@ -78,7 +78,7 @@ export default function Home() {
             src="/landingpageimage.png"
             alt="Next.js logo"
             fill
-            className="object-cover object-center"
+            className="object-cover object-center max-h-screen"
           />
         </div>
 
@@ -234,7 +234,7 @@ export default function Home() {
         <section>
           {/* Separator */}
           <div className={"bg-[#431D19] h-px w-[80%] mx-auto my-10 "} />
-          <div className="h-screen w-full bg-white">
+          <div className="max-h-screen h-full w-full bg-white">
             <div className="w-full h-full flex flex-col  items-center  px-10">
               <Image
                 src="/logoiniyaamurali.png"
@@ -266,7 +266,7 @@ export default function Home() {
 
         {/* RSVP */}
         <section>
-          <div className="h-screen w-full bg-white flex flex-col mt-10 items-center  px-10">
+          <div className="h-screen w-full bg-white flex flex-col items-center mt-10 px-10">
             {/* Separator */}
             <div className={"bg-[#431D19] h-px w-[80%] mx-auto my-10 "} />
             <h1 className="text-[#431D19] mb-4">RSVP</h1>
