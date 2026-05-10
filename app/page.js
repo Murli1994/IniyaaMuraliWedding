@@ -73,7 +73,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex  w-full max-w-2xl flex-col items-center justify-between  bg-white dark:bg-black ">
-        <div className="relative w-full max-w-2xl min-h-screen">
+        <div className="relative w-full max-w-2xl h-screen">
           <Image
             src="/landingpageimage.png"
             alt="Next.js logo"
