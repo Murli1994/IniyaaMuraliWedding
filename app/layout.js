@@ -1,5 +1,28 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import {
+  Amatic_SC,
+  DM_Sans,
+  Poppins,
+  Geist,
+  Geist_Mono,
+} from "next/font/google";
+
+const amatic = Amatic_SC({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-amatic",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dmSans",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,9 +43,9 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${dmSans.variable} ${poppins.variable} ${amatic.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col ">{children}</body>
     </html>
   );
 }
