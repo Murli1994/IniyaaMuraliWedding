@@ -78,7 +78,7 @@ export default function Home() {
             src="/landingpageimage.png"
             alt="Next.js logo"
             fill
-            className="object-cover object-left"
+            className="object-cover object-center"
           />
         </div>
 
