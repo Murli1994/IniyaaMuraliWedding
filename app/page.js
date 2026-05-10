@@ -80,6 +80,8 @@ export default function Home() {
             fill
             className="object-cover object-center max-h-screen"
           />
+          {/* Bg Fade */}
+          <div className="h-[50vh] max-w-2xl w-full bg-linear-to-b from-white/0 via-[#431D19]/50 to-[#431D19] absolute bottom-0"></div>
         </div>
 
         {/* Text */}
@@ -89,8 +91,6 @@ export default function Home() {
           </h1>
           <p className="text-white font-mono text-sm font-light">25.05.2026</p>
         </div>
-        {/* Bg Fade */}
-        <div className="h-[50vh] max-w-2xl w-full bg-linear-to-b from-white/0 via-[#431D19]/50 to-[#431D19] absolute bottom-0"></div>
 
         {/*Reception */}
 
