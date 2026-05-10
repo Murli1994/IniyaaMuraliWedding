@@ -221,7 +221,7 @@ export default function Home() {
                 delay: 0.2, // for stagger
                 ease: [0.25, 0.46, 0.45, 0.94],
               }}
-              className="flex flex-col justify-center items-center px-10"
+              className="flex flex-col justify-center items-center mt-6"
             >
               <CountdownTimer
                 weddingDate={new Date("2026-05-25T09:00:00").getTime()}
