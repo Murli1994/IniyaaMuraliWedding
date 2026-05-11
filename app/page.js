@@ -5,6 +5,7 @@ import CountdownTimer from "./_components/countdowntimer";
 import { motion } from "motion/react";
 import { Separator } from "@/components/ui/separator";
 import { TypewriterEffect } from "./_components/_ui/typewritereffect";
+import VenueMap from "./_components/venuemap";
 
 export default function Home() {
   const words = [
@@ -93,7 +94,6 @@ export default function Home() {
         </div>
 
         {/*Reception */}
-
         <div className="h-screen w-full bg-[#431D19] flex flex-col justify-center items-center ">
           <motion.div
             key="1"
@@ -126,7 +126,7 @@ export default function Home() {
             <ul className="mt-4">
               <Link href="https://share.google/dreicjbAcbqKvGA17">
                 <p className=" text-white font-mono text-justify">
-                  Location :
+                  Location Link:
                   <span className="text-blue-300">
                     {" "}
                     Ramani Shankar Mahal, Vellore
@@ -185,7 +185,7 @@ export default function Home() {
             <ul className="mt-4">
               <Link href="https://share.google/dreicjbAcbqKvGA17">
                 <p className=" text-[#431D19] font-mono text-justify">
-                  Location :
+                  Location Link:
                   <span className="text-blue-300"> Ramani Shankar Mahal</span>
                 </p>
               </Link>
@@ -265,11 +265,10 @@ export default function Home() {
         </section>
 
         {/* RSVP */}
-        <section>
-          <div className="h-screen w-full bg-white flex flex-col items-center mt-10 px-10">
-            {/* Separator */}
-            <div className={"bg-[#431D19] h-px w-[80%] mx-auto my-10 "} />
-            <h1 className="text-[#431D19] mb-4">RSVP</h1>
+        {/* <section>
+          <div className="max-h-screen w-full bg-[#431D19] flex flex-col items-center mt-10 px-10 py-10">
+            <div className={"bg-white h-px w-[80%] mx-auto my-6"} />
+            <h1 className="text-white mb-4">RSVP</h1>
             <Link href={"/rsvp"}>
               <Image
                 src="/envelope.png"
@@ -280,12 +279,65 @@ export default function Home() {
                 className="w-full h-auto my-4"
               />
             </Link>
-            <p className="text-[#431D19] font-mono text-justify px-4">
+            <p className="text-white font-mono text-justify px-4">
               Your presence means the world to us. Please let us know if you’ll
               be joining the celebration.
             </p>
           </div>
+        </section> */}
+
+        {/* Map */}
+        <section>
+          {/* Separator */}
+          <div className={"bg-[#431D19] h-px w-[80%] mx-auto mt-20 "} />
+          <div className="max-h-screen w-full bg-white flex flex-col items-center  px-10">
+            <VenueMap />
+          </div>
         </section>
+
+        {/* Program */}
+        <div className="h-auto w-full bg-[#431D19] mt-20 flex flex-col justify-center items-center py-20">
+          {/* Separator */}
+          <div className={"bg-white h-px w-[80%] mx-auto my-10"} />
+          <div className="w-20 h-20 bg-white flex items-center justify-center rounded-full mb-4">
+            <Image
+              src="/logoiniyaamurali.png"
+              alt="Next.js logo"
+              height={100}
+              width={100}
+              priority
+              className="h-15 w-auto"
+            />
+          </div>
+          <h1 className="text-white mb-10">WEDDING EVENTS</h1>
+          <h2 className="text-white">24th March</h2>
+          <div className="mb-10">
+            <div className="flex gap-4">
+              <h3 className="text-white"> 04:00 PM</h3>{" "}
+              <div className="border-l-2 h-6" />{" "}
+              <h3 className="text-white">Engagement</h3>
+            </div>
+            <div className="flex gap-4">
+              <h3 className="text-white"> 06:00 PM</h3>{" "}
+              <div className="border-l-2 h-6" />{" "}
+              <h3 className="text-white">Reception</h3>
+            </div>
+          </div>
+          <h2 className="text-white">25th March</h2>
+          <div>
+            <div className="flex gap-4">
+              <h3 className="text-white"> 09:00 AM</h3>{" "}
+              <div className="border-l-2 h-6" />{" "}
+              <h3 className="text-white">Muhurtham</h3>
+            </div>
+          </div>
+          {/* Separator */}
+          <div className={"bg-white h-0.5 w-[80%] mx-auto my-10 "} />
+
+          <h3 className="text-white px-10 text-center tracking-wider">
+            “Love grows deeper when shared with family and cherished friends.”
+          </h3>
+        </div>
       </main>
     </div>
   );
