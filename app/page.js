@@ -190,7 +190,7 @@ export default function Home() {
               </Link>
               <li>
                 <p className=" text-[#431D19] font-mono text-justify">
-                  Time : 06:00 PM
+                  Time : 09:00 AM
                 </p>
               </li>
             </ul>
