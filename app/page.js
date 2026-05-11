@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import CountdownTimer from "./_components/countdowntimer";
 import { motion } from "motion/react";
-import { Separator } from "@/components/ui/separator";
 import { TypewriterEffect } from "./_components/_ui/typewritereffect";
 import VenueMap from "./_components/venuemap";
 
