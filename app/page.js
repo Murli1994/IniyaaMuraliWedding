@@ -5,71 +5,9 @@ import CountdownTimer from "./_components/countdowntimer";
 import { motion } from "motion/react";
 import { TypewriterEffect } from "./_components/_ui/typewritereffect";
 import VenueMap from "./_components/venuemap";
+import { words } from "./constants/constants";
 
 export default function Home() {
-  const words = [
-    {
-      text: "'Marriage ",
-      className:
-        "font-amatic text-2xl font-semibold leading-8 tracking-tight text-slate-900",
-    },
-    {
-      text: "is ",
-      className:
-        "font-amatic text-2xl font-semibold leading-8 tracking-tight text-slate-900",
-    },
-    {
-      text: "the ",
-      className:
-        "font-amatic text-2xl font-semibold leading-8 tracking-tight text-slate-900",
-    },
-    {
-      text: "beginning ",
-      className:
-        "font-amatic text-2xl font-semibold leading-8 tracking-tight text-slate-900",
-    },
-    {
-      text: "of ",
-      className:
-        "font-amatic text-2xl font-semibold leading-8 tracking-tight text-slate-900",
-    },
-    {
-      text: "a ",
-      className:
-        "font-amatic text-2xl font-semibold leading-8 tracking-tight text-slate-900",
-    },
-    {
-      text: "lifetime ",
-      className:
-        "font-amatic text-2xl font-semibold leading-8 tracking-tight text-slate-900",
-    },
-    {
-      text: "of ",
-      className:
-        "font-amatic text-2xl font-semibold leading-8 tracking-tight text-slate-900",
-    },
-    {
-      text: "love, ",
-      className:
-        "font-amatic text-2xl font-semibold leading-8 tracking-tight text-slate-900",
-    },
-    {
-      text: "laughter, ",
-      className:
-        "font-amatic text-2xl font-semibold leading-8 tracking-tight text-slate-900",
-    },
-    {
-      text: "and ",
-      className:
-        "font-amatic text-2xl font-semibold leading-8 tracking-tight text-slate-900",
-    },
-    {
-      text: "companionship.'",
-      className:
-        "font-amatic text-2xl font-semibold leading-8 tracking-tight text-slate-900",
-    },
-  ];
-
   return (
     <div className="flex min-h-screen flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex  w-full max-w-2xl flex-col items-center justify-between  bg-white dark:bg-black ">
@@ -298,44 +236,69 @@ export default function Home() {
         <div className="h-auto w-full bg-[#431D19] mt-20 flex flex-col justify-center items-center py-20">
           {/* Separator */}
           <div className={"bg-white h-px w-[80%] mx-auto my-10"} />
-          <div className="w-20 h-20 bg-white flex items-center justify-center rounded-full mb-4">
-            <Image
-              src="/logoiniyaamurali.png"
-              alt="Next.js logo"
-              height={100}
-              width={100}
-              priority
-              className="h-15 w-auto"
-            />
-          </div>
-          <h1 className="text-white mb-10">WEDDING EVENTS</h1>
-          <h2 className="text-white">24th March</h2>
-          <div className="mb-10">
-            <div className="flex gap-4">
-              <h3 className="text-white"> 04:00 PM</h3>{" "}
-              <div className="border-l-2 h-6" />{" "}
-              <h3 className="text-white">Engagement</h3>
+          <motion.div
+            key="1"
+            initial={{ y: 150, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: false }}
+            transition={{
+              duration: 0.8,
+              delay: 0.2, // for stagger
+              ease: [0.25, 0.46, 0.45, 0.94],
+            }}
+            className="flex flex-col justify-center items-center mt-6"
+          >
+            <div className="w-20 h-20 bg-white flex items-center justify-center rounded-full mb-4">
+              <Image
+                src="/logoiniyaamurali.png"
+                alt="Next.js logo"
+                height={100}
+                width={100}
+                priority
+                className="h-15 w-auto"
+              />
             </div>
-            <div className="flex gap-4">
-              <h3 className="text-white"> 06:00 PM</h3>{" "}
-              <div className="border-l-2 h-6" />{" "}
-              <h3 className="text-white">Reception</h3>
+            <h1 className="text-white mb-10">WEDDING EVENTS</h1>
+            <h2 className="text-white">24th March</h2>
+            <div className="mb-10">
+              <div className="flex gap-4">
+                <h3 className="text-white"> 04:00 PM</h3>{" "}
+                <div className="border-l-2 h-6" />{" "}
+                <h3 className="text-white">Engagement</h3>
+              </div>
+              <div className="flex gap-4">
+                <h3 className="text-white"> 06:00 PM</h3>{" "}
+                <div className="border-l-2 h-6" />{" "}
+                <h3 className="text-white">Reception</h3>
+              </div>
             </div>
-          </div>
-          <h2 className="text-white">25th March</h2>
-          <div>
-            <div className="flex gap-4">
-              <h3 className="text-white"> 09:00 AM</h3>{" "}
-              <div className="border-l-2 h-6" />{" "}
-              <h3 className="text-white">Muhurtham</h3>
+            <h2 className="text-white">25th March</h2>
+            <div>
+              <div className="flex gap-4">
+                <h3 className="text-white"> 09:00 AM</h3>{" "}
+                <div className="border-l-2 h-6" />{" "}
+                <h3 className="text-white">Muhurtham</h3>
+              </div>
             </div>
-          </div>
+          </motion.div>
           {/* Separator */}
           <div className={"bg-white h-0.5 w-[80%] mx-auto my-10 "} />
 
-          <h3 className="text-white px-10 text-center tracking-wider">
-            “Love grows deeper when shared with family and cherished friends.”
-          </h3>
+          <motion.div
+            initial={{ y: 150, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: false }}
+            transition={{
+              duration: 0.8,
+              delay: 0.2, // for stagger
+              ease: [0.25, 0.46, 0.45, 0.94],
+            }}
+            className="flex flex-col justify-center items-center mt-6"
+          >
+            <h3 className="text-white px-10 text-center tracking-wider">
+              “Love grows deeper when shared with family and cherished friends.”
+            </h3>
+          </motion.div>
         </div>
       </main>
     </div>
