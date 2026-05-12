@@ -72,7 +72,7 @@ export default function Home() {
               </Link>
               <li>
                 <p className=" text-white font-mono text-justify">
-                  Time : 06:00 PM
+                  Time : 06:00 PM Onwards
                 </p>
               </li>
             </ul>
@@ -128,7 +128,7 @@ export default function Home() {
               </Link>
               <li>
                 <p className=" text-[#431D19] font-mono text-justify">
-                  Time : 09:00 AM
+                  Time : 09:00 AM Onwards
                 </p>
               </li>
             </ul>
