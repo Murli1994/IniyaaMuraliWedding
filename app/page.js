@@ -259,7 +259,7 @@ export default function Home() {
               />
             </div>
             <h1 className="text-white mb-10">WEDDING EVENTS</h1>
-            <h2 className="text-white">24th March</h2>
+            <h2 className="text-white">24th May</h2>
             <div className="mb-10">
               <div className="flex gap-4">
                 <h3 className="text-white"> 04:00 PM</h3>{" "}
@@ -272,7 +272,7 @@ export default function Home() {
                 <h3 className="text-white">Reception</h3>
               </div>
             </div>
-            <h2 className="text-white">25th March</h2>
+            <h2 className="text-white">25th May</h2>
             <div>
               <div className="flex gap-4">
                 <h3 className="text-white"> 09:00 AM</h3>{" "}
